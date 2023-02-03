@@ -18,11 +18,13 @@ fn main() {
     println!("The secret number is: {}", secret_number);
     println!("Please input your guess."); //予想を入力してください
 
-    println!("You guessed: {}", guess); //次のように予想しました
+    loop {
+        println!("You guessed: {}", guess); //次のように予想しました
 
-    match guess.cmp(&secret_number) {
-        Ordering::Less => println!("Too small!"),
-        Ordering::Greater => println!("Too big!"),
-        Ordering::Equal => println!("You win!"),
+        match guess.cmp(&secret_number) {
+            Ordering::Less => println!("Too small!"),
+            Ordering::Greater => println!("Too big!"),
+            Ordering::Equal => println!("You win!"),
+        }
     }
 }
