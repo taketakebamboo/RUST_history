@@ -13,7 +13,7 @@ fn main() {
 
     let index: usize = index
         .trim()
-        .porse()
+        .parse()
         .expect("Index entered was not a number");
 
     let element = a[index];
