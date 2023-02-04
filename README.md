@@ -8,6 +8,11 @@
 * Cargo.toml,Cargo.lookの使い方を知る
 * match文を使用する
 * loop,break文を使用する
+* constの命名規則を知る
+* shadowingに触れる
+* データ型について学習する
+* 複合型、タプル型、配列について学習する
+* 
 
 # 課題
 
