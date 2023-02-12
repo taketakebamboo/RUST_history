@@ -1,17 +1,10 @@
-use std::io;
-
 fn main() {
-    let mut number = String::new();
+    let a = [10, 20, 30, 40, 50];
+    let mut index = 0;
 
-    io::stdin()
-        .read_line(&mut number)
-        .expect("Failed to read line");
+    while index < 5 {
+        println!("The value is: {}", a[index]);
 
-    let number: u32 = number.trim().parse().expect("Pleese type number!");
-
-    if number < 5 {
-        println!("condition was true");
-    } else {
-        println!("condition was false");
+        index += 1;
     }
 }
