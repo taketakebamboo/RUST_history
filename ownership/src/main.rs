@@ -1,7 +1,17 @@
 fn main() {
-    {
-        let s1 = String::from("hello");
-        let s2 = s1.clone();
-        println!("{},{}", s1, s2);
-    }
+    let s1 = gives_ownership;
+
+    let s2 = String::from("hello");
+
+    let s3 = take_and_gives_back(s2);
+}
+
+fn gives_ownership() -> String {
+    let some_string = String::from("hello!");
+
+    some_string
+}
+
+fn take_and_gives_back(a_string: String) -> String {
+    a_string
 }
